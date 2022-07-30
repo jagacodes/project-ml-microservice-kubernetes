@@ -13,6 +13,6 @@ FROM python:3.7.3-stretch
 # Step 4:
 # Expose port 80
 
-## Step 5:
+# Step 5:
 # Run app.py at container launch
 
