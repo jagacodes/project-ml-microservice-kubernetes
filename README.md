@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <include a CircleCI status badge, here>
 
 ## Project Overview
@@ -48,3 +49,6 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+=======
+# project-ml-microservice-kubernetes
+>>>>>>> 9f6e304ef2ed690a09e0f931e527d4902b4b8a6a
