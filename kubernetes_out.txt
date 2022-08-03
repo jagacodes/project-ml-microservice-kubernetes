@@ -1,0 +1,26 @@
+agacodes@SLB-D6CKPN2:/mnt/c/Docker/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh 
+pod/projectml created
+NAME        READY   STATUS    RESTARTS   AGE
+projectml   1/1     Running   0          10s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 286-484-452
+[2022-08-03 19:02:55,603] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-08-03 19:02:55,623] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-08-03 19:02:55,634] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-08-03 19:02:55,638] INFO in app: prediction: [20.35373177134412]
+127.0.0.1 - - [03/Aug/2022 19:02:55] "POST /predict HTTP/1.1" 200 -

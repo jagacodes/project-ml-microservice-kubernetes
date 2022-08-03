@@ -10,9 +10,10 @@ dockerpath="jagacodes/projectml:v1.0"
 # Run the Docker Hub container with kubernetes
 kubectl run projectml\
     --image=$dockerpath\
-    --port=80 --labels app=projectml
+    --port=80 --labels app=projectml\
+    
 
-
+sleep 10
 # Step 3:
 # List kubernetes pods
 kubectl get pods
